@@ -1,0 +1,87 @@
+IMDb non-commercial schema
+https://datasets.imdbws.com/
+
+*** name.basics.tsv
+nconst  primaryName     birthYear       deathYear       primaryProfession       knownForTitles
+nm0000001       Fred Astaire    1899    1987    actor,miscellaneous,producer    tt0072308,tt0050419,tt0053137,tt0027125
+nm0000002       Lauren Bacall   1924    2014    actress,soundtrack,archive_footage      tt0037382,tt0075213,tt0117057,tt0038355
+nm0000003       Brigitte Bardot 1934    \N      actress,music_department,producer       tt0057345,tt0049189,tt0056404,tt0054452
+nm0000004       John Belushi    1949    1982    actor,writer,music_department   tt0072562,tt0077975,tt0080455,tt0078723
+nm0000005       Ingmar Bergman  1918    2007    writer,director,actor   tt0050986,tt0083922,tt0050976,tt0069467
+nm0000006       Ingrid Bergman  1915    1982    actress,producer,soundtrack     tt0034583,tt0036855,tt0038109,tt0038787
+nm0000007       Humphrey Bogart 1899    1957    actor,producer,miscellaneous    tt0034583,tt0042593,tt0037382,tt0033870
+nm0000008       Marlon Brando   1924    2004    actor,director,writer   tt0078788,tt0068646,tt0047296,tt0070849
+nm0000009       Richard Burton  1925    1984    actor,producer,director tt0061184,tt0087803,tt0059749,tt0057877
+
+*** title.ratings.tsv
+tconst  averageRating   numVotes
+tt0000001       5.7     2074
+tt0000002       5.6     279
+tt0000003       6.5     2066
+tt0000004       5.4     180
+tt0000005       6.2     2810
+tt0000006       5.0     192
+tt0000007       5.4     883
+tt0000008       5.4     2218
+tt0000009       5.4     211
+
+*** title.akas.tsv
+titleId ordering        title   region  language        types   attributes      isOriginalTitle
+tt0000001       1       Carmencita      \N      \N      original        \N      1
+tt0000001       2       Carmencita      DE      \N      \N      literal title   0
+tt0000001       3       Carmencita      US      \N      imdbDisplay     \N      0
+tt0000001       4       Carmencita - spanyol tÃ¡nc      HU      \N      imdbDisplay     \N      0
+tt0000001       5       ÎšÎ±ÏÎ¼ÎµÎ½ÏƒÎ¯Ï„Î±     GR      \N      imdbDisplay     \N      0
+tt0000001       6       ÐšÐ°Ñ€Ð¼ÐµÐ½ÑÐ¸Ñ‚Ð°     RU      \N      imdbDisplay     \N      0
+tt0000001       7       ÐšÐ°Ñ€Ð¼ÐµÐ½ÑÑ–Ñ‚Ð°     UA      \N      imdbDisplay     \N      0
+tt0000001       8       ã‚«ãƒ«ãƒ¡ãƒ³ãƒãƒ¼ã‚¿    JP      ja      imdbDisplay     \N      0
+tt0000002       1       Le clown et ses chiens  \N      \N      original        \N      1
+
+*** title.basics.tsv
+tconst  titleType       primaryTitle    originalTitle   isAdult startYear       endYear runtimeMinutes  genres
+tt0000001       short   Carmencita      Carmencita      0       1894    \N      1       Documentary,Short
+tt0000002       short   Le clown et ses chiens  Le clown et ses chiens  0       1892    \N      5       Animation,Short
+tt0000003       short   Pauvre Pierrot  Pauvre Pierrot  0       1892    \N      5       Animation,Comedy,Romance
+tt0000004       short   Un bon bock     Un bon bock     0       1892    \N      12      Animation,Short
+tt0000005       short   Blacksmith Scene        Blacksmith Scene        0       1893    \N      1       Comedy,Short
+tt0000006       short   Chinese Opium Den       Chinese Opium Den       0       1894    \N      1       Short
+tt0000007       short   Corbett and Courtney Before the Kinetograph     Corbett and Courtney Before the Kinetograph     0       1894    \N      1Short,Sport
+tt0000008       short   Edison Kinetoscopic Record of a Sneeze  Edison Kinetoscopic Record of a Sneeze  0       1894    \N      1       Documentary,Short
+tt0000009       movie   Miss Jerry      Miss Jerry      0       1894    \N      45      Romance
+
+*** title.crew.tsv
+tconst  directors       writers
+tt0000001       nm0005690       \N
+tt0000002       nm0721526       \N
+tt0000003       nm0721526       \N
+tt0000004       nm0721526       \N
+tt0000005       nm0005690       \N
+tt0000006       nm0005690       \N
+tt0000007       nm0005690,nm0374658     \N
+tt0000008       nm0005690       \N
+tt0000009       nm0085156       nm0085156
+
+*** title.episode.tsv
+tconst  parentTconst    seasonNumber    episodeNumber
+tt0031458       tt32857063      \N      \N
+tt0041951       tt0041038       1       9
+tt0042816       tt0989125       1       17
+tt0042889       tt0989125       \N      \N
+tt0043426       tt0040051       3       42
+tt0043631       tt0989125       2       16
+tt0043693       tt0989125       2       8
+tt0043710       tt0989125       3       3
+tt0044093       tt0959862       1       6
+
+*** title.principals.tsv
+tconst  ordering        nconst  category        job     characters
+tt0000001       1       nm1588970       self    \N      ["Self"]
+tt0000001       2       nm0005690       director        \N      \N
+tt0000001       3       nm0005690       producer        producer        \N
+tt0000001       4       nm0374658       cinematographer director of photography \N
+tt0000002       1       nm0721526       director        \N      \N
+tt0000002       2       nm1335271       composer        \N      \N
+tt0000003       1       nm0721526       director        \N      \N
+tt0000003       2       nm1770680       producer        producer        \N
+tt0000003       3       nm0721526       producer        producer        \N
+
